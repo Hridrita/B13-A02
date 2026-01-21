@@ -656,7 +656,7 @@ body {
 
 @media (max-width: 850px) {
     .host-card {
-        flex-direction: column; /* মোবাইলে ছবি উপরে এবং টেক্সট নিচে আসবে */
+        flex-direction: column; 
         text-align: center;
         padding: 40px 20px;
     }
@@ -671,11 +671,11 @@ body {
     }
 }
 
-/* Footer Section Styles */
+
 .footer-section {
     padding: 80px 0;
     position: relative;
-    overflow: hidden; /* Background wave jeno baire na jay */
+    overflow: hidden; 
     text-align: center;
     background-color: #130433;
 }
@@ -687,16 +687,16 @@ body {
     z-index: 2;
 }
 
-/* Background Wave Image */
+
 .footer-wave-bg {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    opacity: 0.3; /* Design onujayi halka thakbe */
+    opacity: 0.3; 
     z-index: 1;
-    pointer-events: none; /* Wave er upore click jeno na pore */
+    pointer-events: none; 
 }
 
 .footer-content {
@@ -704,13 +704,13 @@ body {
     z-index: 3;
 }
 
-/* Platform Links Alignment */
+
 .platform-links {
     display: flex;
     justify-content: center;
     gap: 30px;
     margin: 30px 0;
-    flex-wrap: wrap; /* Mobile e jeno niche niche chole jay */
+    flex-wrap: wrap; 
 }
 
 .platform-links a {
@@ -728,18 +728,18 @@ body {
 }
 
 .platform-links a img {
-    width: 18px; /* Platform icon size */
+    width: 18px; 
     height: auto;
 }
 
-/* Copyright Style */
+
 .copyright {
     color: #666;
     font-size: 14px;
     margin-top: 20px;
 }
 
-/* Responsive View */
+
 @media (max-width: 600px) {
     .platform-links {
         gap: 15px;
