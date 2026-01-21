@@ -130,13 +130,13 @@ body {
         left: 0;
     }
 
-    /* Hide Subscribe button on small screens or adjust it */
+    
     .nav-btn {
         display: none; 
     }
 }
 
-/* Hero Section Styles */
+
 .hero-section {
     padding: 80px 0;
     text-align: center;
@@ -151,23 +151,23 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    min-height: 400px; /* Wave thakhar jonno jaiga dorkar */
+    min-height: 400px; 
 }
 
-/* Wave Background Image */
+
 .wave-bg {
     position: absolute;
     top: 50%;
     
-    transform: translate(-50%, -50%); /* Exact center alignment */
+    transform: translate(-50%, -50%); 
     width: 100%;
-    max-width: 1200px; /* Figma design onujayi adjust kora */
+    max-width: 1200px; 
     z-index: -1;
     opacity: 0.6;
     
 }
 
-/* Center Circle and Mic */
+
 .circle-container {
     position: relative;
     width: 220px;
@@ -175,7 +175,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; /* -90px মুছে দিয়ে এটি দিন */
+    margin: 0 auto; 
 }
 
 .center-circle {
@@ -186,15 +186,15 @@ body {
 
 .mic-icon {
     position: absolute;
-    width: 70px; /* Adjust based on your image size */
+    width: 70px; 
 }
 
-/* "NEW" Badge Style */
+
 .new-badge {
     position: absolute;
     top: 15px;
     right: 15px;
-    background: #00ff88; /* Bright Green */
+    background: #00ff88; 
     color: #000;
     font-size: 12px;
     font-weight: bold;
@@ -250,12 +250,12 @@ body {
     gap: 10px;
 }
 
-/* Font Awesome Icons adjustment */
+
 .hero-buttons i {
     font-size: 18px;
 }
 
-/* Mobile Responsive */
+
 @media (max-width: 768px) {
     .hero-text h1 {
         font-size: 32px;
@@ -272,26 +272,26 @@ body {
 
 
 
-/* Container common for all sections */
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* --- Banner Alignment Fix --- */
+
 .hero-visual {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 250px; /* Adjust based on your image height */
+    min-height: 250px; 
     margin-top: 40px;
 }
 
 .wave-bg {
     position: absolute;
-    width: 100vw; /* Screen er ematha theke omatha */
+    width: 100vw; 
     max-width: 1200px;
     z-index: 1;
     top: 50%;
@@ -300,7 +300,7 @@ body {
 
 .circle-container {
     position: relative;
-    z-index: 2; /* Circle ke wave er upore rakhbe */
+    z-index: 2; 
 }
 
 /* --- About Section Styles --- */
