@@ -382,7 +382,7 @@ body {
 
 
 
-/* Why Choose Section Styles */
+
 .why-choose {
     padding: 100px 0;
     color: white;
@@ -394,7 +394,7 @@ body {
     margin-bottom: 50px;
 }
 
-/* Feature Grid Layout */
+
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -404,7 +404,7 @@ body {
 
 
 
-/* Common Card Style */
+
 .feature-card {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.1);
