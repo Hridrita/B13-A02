@@ -303,7 +303,7 @@ body {
     z-index: 2; 
 }
 
-/* --- About Section Styles --- */
+
 .about-section {
     padding: 100px 0;
     
@@ -335,7 +335,7 @@ body {
     width: 100%;
 }
 
-/* Stats Grid Desktop */
+
 .stats-grid {
     display: flex;
     justify-content: space-between;
@@ -344,7 +344,7 @@ body {
 
 .stat-item h3 {
     font-size: 40px;
-    color: #00ff88; /* Bright green from design */
+    color: #00ff88; 
     margin-bottom: 10px;
 }
 
@@ -355,11 +355,11 @@ body {
     text-transform: uppercase;
 }
 
-/* --- Responsive (Mobile View) --- */
+
 @media (max-width: 768px) {
     .stats-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* 2x2 grid */
+        grid-template-columns: 1fr 1fr; 
         gap: 40px 20px;
     }
 
@@ -374,7 +374,7 @@ body {
 
 @media (max-width: 480px) {
     .stats-grid {
-        grid-template-columns: 1fr; /* Single column for very small screens */
+        grid-template-columns: 1fr; 
     }
 }
 
