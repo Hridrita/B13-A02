@@ -440,7 +440,7 @@ body {
 
 
 
-/* Figma Matching Layout (Grid Spanning) */
+
 .tall-card {
     grid-row: span 2;
     display: flex;
@@ -449,17 +449,17 @@ body {
 }
 
 .wide-card {
-    grid-row: span 2; /* Horizontal wide card */   
+    grid-row: span 2;    
     
 } 
 
 .short-card { 
     grid-column: span 1; }
 
-/* --- Mobile Responsive (Single Column) --- */
+
 @media (max-width: 992px) {
     .feature-grid {
-        grid-template-columns: 1fr 1fr; /* 2 column for tablets */
+        grid-template-columns: 1fr 1fr; 
     }
     .wide-card, .tall-card {
         grid-column: span 1;
@@ -469,7 +469,7 @@ body {
 
 @media (max-width: 768px) {
     .feature-grid {
-        grid-template-columns: 1fr; /* Single column for mobile */
+        grid-template-columns: 1fr; 
     }
     .section-title {
         font-size: 28px;
