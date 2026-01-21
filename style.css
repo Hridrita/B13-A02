@@ -495,7 +495,7 @@ body {
     .feature-grid {
         grid-template-columns: 1fr 1fr; 
     }
-    .wide-card, .tall-card {
+    .audio-span, .mobile-span, .global-span, .exclusive-span, .resources-span {
         grid-column: span 1;
         grid-row: span 1;
     }
