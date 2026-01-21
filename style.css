@@ -481,22 +481,22 @@ body {
     
 }
 
-/* Episodes Section Styles */
+
 .episodes-section {
     padding: 100px 0;
 }
 
 .episodes-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* ডেস্কটপে ৩টি কার্ড */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 30px;
 }
 
 .episode-card {
-    background: #1a0b36; /* কার্ডের ব্যাকগ্রাউন্ড */
+    background: #1a0b36; 
     border-radius: 20px;
     overflow: hidden;
-    text-decoration: none; /* লিঙ্কের আন্ডারলাইন রিমুভ */
+    text-decoration: none; 
     transition: transform 0.3s ease;
     display: block;
 }
@@ -505,7 +505,7 @@ body {
     transform: translateY(-10px);
 }
 
-/* Thumbnail with Play Button */
+
 .thumbnail-container {
     position: relative;
     width: 100%;
@@ -535,7 +535,7 @@ body {
     box-shadow: 0 0 20px rgba(255, 65, 108, 0.5);
 }
 
-/* Info Section */
+
 .episode-info {
     padding: 25px;
 }
@@ -554,23 +554,23 @@ body {
 }
 
 .duration {
-    color: #00ff88; /* ডিজাইন অনুযায়ী গ্রিন কালার */
+    color: #00ff88; 
     font-weight: bold;
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-/* --- Responsive (Mobile View) --- */
+
 @media (max-width: 992px) {
     .episodes-grid {
-        grid-template-columns: 1fr 1fr; /* ট্যাবলেটে ২টা */
+        grid-template-columns: 1fr 1fr; 
     }
 }
 
 @media (max-width: 768px) {
     .episodes-grid {
-        grid-template-columns: 1fr; /* মোবাইলে ১টা */
+        grid-template-columns: 1fr; 
     }
     
     .thumbnail-container {
