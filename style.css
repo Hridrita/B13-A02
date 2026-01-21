@@ -1,0 +1,751 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1a0b3c; /* Dark background like design */
+    color: white;
+}
+
+/* Navbar Styling */
+.navbar {
+    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    width: 100%;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Logo Styling */
+.logo {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logo span {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+/* Menu Items (Center) */
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: #fff;
+}
+
+/* Gradient Button (Right) */
+.subscribe-btn {
+    background: linear-gradient(90deg, #fce043 0%, #fb7185 50%, #d946ef 100%);
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s;
+}
+
+.subscribe-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive (Mobile View) */
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.btn-img-icon {
+    width: 18px;       /* Design onujayi size */
+    height: auto;
+    margin-right: 8px; /* Text theke gap */
+}
+
+@media (max-width: 850px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #1a0b36;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    .nav-menu li {
+        margin: 30px 0;
+    }
+
+    .nav-menu li a {
+        font-size: 20px;
+    }
+
+    #check:checked ~ .nav-menu {
+        left: 0;
+    }
+
+    /* Hide Subscribe button on small screens or adjust it */
+    .nav-btn {
+        display: none; 
+    }
+}
+
+/* Hero Section Styles */
+.hero-section {
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.hero-main-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    min-height: 400px; /* Wave thakhar jonno jaiga dorkar */
+}
+
+/* Wave Background Image */
+.wave-bg {
+    position: absolute;
+    top: 50%;
+    
+    transform: translate(-50%, -50%); /* Exact center alignment */
+    width: 100%;
+    max-width: 1200px; /* Figma design onujayi adjust kora */
+    z-index: -1;
+    opacity: 0.6;
+    
+}
+
+/* Center Circle and Mic */
+.circle-container {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* -90px মুছে দিয়ে এটি দিন */
+}
+
+.center-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.mic-icon {
+    position: absolute;
+    width: 70px; /* Adjust based on your image size */
+}
+
+/* "NEW" Badge Style */
+.new-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #00ff88; /* Bright Green */
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+}
+
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    margin-top: 20px; 
+}
+
+.hero-text p {
+    color: #b1b1b1;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.spotify-btn {
+    background: linear-gradient(90deg, #fce043, #fb7185, #d946ef);
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sub-btn {
+    border: 1px solid #00ff88;
+    background: rgba(0, 255, 136, 0.05);
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: #00ff88;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Font Awesome Icons adjustment */
+.hero-buttons i {
+    font-size: 18px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 32px;
+    }
+    .circle-container {
+        width: 180px;
+        height: 180px;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+/* Container common for all sections */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Banner Alignment Fix --- */
+.hero-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px; /* Adjust based on your image height */
+    margin-top: 40px;
+}
+
+.wave-bg {
+    position: absolute;
+    width: 100vw; /* Screen er ematha theke omatha */
+    max-width: 1200px;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.circle-container {
+    position: relative;
+    z-index: 2; /* Circle ke wave er upore rakhbe */
+}
+
+/* --- About Section Styles --- */
+.about-section {
+    padding: 100px 0;
+    
+    color: white;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.about-content p {
+    color: #b1b1b1;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 16px;
+}
+
+.join-text {
+    margin-top: 30px !important;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 60px auto;
+    width: 100%;
+}
+
+/* Stats Grid Desktop */
+.stats-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.stat-item h3 {
+    font-size: 40px;
+    color: #00ff88; /* Bright green from design */
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #b1b1b1;
+    text-transform: uppercase;
+}
+
+/* --- Responsive (Mobile View) --- */
+@media (max-width: 768px) {
+    .stats-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2x2 grid */
+        gap: 40px 20px;
+    }
+
+    .about-content h2 {
+        font-size: 28px;
+    }
+
+    .stat-item h3 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr; /* Single column for very small screens */
+    }
+}
+
+
+
+
+
+/* Why Choose Section Styles */
+.why-choose {
+    padding: 100px 0;
+    color: white;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+/* Feature Grid Layout */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, minmax(220px, auto));
+    gap: 24px;
+}
+
+
+
+/* Common Card Style */
+.feature-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 40px;
+    transition: 0.3s ease;
+}
+
+.feature-card:hover {
+    background: rgba(255, 255, 255, 0.06);
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #b1b1b1;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+/* Figma Matching Layout (Grid Spanning) */
+.tall-card {
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wide-card {
+    grid-row: span 2; /* Horizontal wide card */   
+    
+} 
+
+.short-card { 
+    grid-column: span 1; }
+
+/* --- Mobile Responsive (Single Column) --- */
+@media (max-width: 992px) {
+    .feature-grid {
+        grid-template-columns: 1fr 1fr; /* 2 column for tablets */
+    }
+    .wide-card, .tall-card {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+    .section-title {
+        font-size: 28px;
+    }
+    .feature-card {
+        padding: 30px;
+    }
+
+    
+}
+
+/* Episodes Section Styles */
+.episodes-section {
+    padding: 100px 0;
+}
+
+.episodes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* ডেস্কটপে ৩টি কার্ড */
+    gap: 30px;
+}
+
+.episode-card {
+    background: #1a0b36; /* কার্ডের ব্যাকগ্রাউন্ড */
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none; /* লিঙ্কের আন্ডারলাইন রিমুভ */
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.episode-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Thumbnail with Play Button */
+.thumbnail-container {
+    position: relative;
+    width: 100%;
+    height: 220px;
+}
+
+.thumbnail-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0 0 20px rgba(255, 65, 108, 0.5);
+}
+
+/* Info Section */
+.episode-info {
+    padding: 25px;
+}
+
+.episode-info h3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.episode-info p {
+    color: #b1b1b1;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.duration {
+    color: #00ff88; /* ডিজাইন অনুযায়ী গ্রিন কালার */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* --- Responsive (Mobile View) --- */
+@media (max-width: 992px) {
+    .episodes-grid {
+        grid-template-columns: 1fr 1fr; /* ট্যাবলেটে ২টা */
+    }
+}
+
+@media (max-width: 768px) {
+    .episodes-grid {
+        grid-template-columns: 1fr; /* মোবাইলে ১টা */
+    }
+    
+    .thumbnail-container {
+        height: 250px;
+    }
+}
+
+/* Host Section Styles */
+.host-section {
+    padding: 100px 0;
+}
+
+.host-card {
+    background: #1a0b36; /* কার্ডের ডার্ক ব্যাকগ্রাউন্ড */
+    border-radius: 30px;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    gap: 50px; /* ছবি এবং টেক্সটের মাঝখানের গ্যাপ */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Host Image */
+.host-img-container {
+    flex-shrink: 0; /* ছবি যাতে ছোট না হয়ে যায় */
+}
+
+.host-main-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* ছবি গোল করার জন্য */
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Host Text Details */
+.host-details h3 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.host-details p {
+    color: #b1b1b1;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Social Media Icons */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.05); /* হালকা সাদাটে ব্যাকগ্রাউন্ড */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* হালকা বর্ডার */
+    border-radius: 50%; /* পারফেক্ট সার্কেল করার জন্য */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-links a img {
+    width: 20px; /* আইকনটি সার্কেলের চেয়ে ছোট রাখুন */
+    height: 20px;
+    object-fit: contain;
+    filter: brightness(1); /* আইকন যাতে পরিষ্কার দেখা যায় */
+}
+
+.social-links a:hover {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b); /* হোভার করলে ব্যাকগ্রাউন্ড কালার হবে */
+    border-color: transparent;
+    transform: translateY(-5px); /* হালকা উপরে উঠবে */
+}
+
+/* --- Responsive (Mobile View) --- */
+@media (max-width: 850px) {
+    .host-card {
+        flex-direction: column; /* মোবাইলে ছবি উপরে এবং টেক্সট নিচে আসবে */
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+    
+    .host-main-img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Footer Section Styles */
+.footer-section {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden; /* Background wave jeno baire na jay */
+    text-align: center;
+    background-color: #130433;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* Background Wave Image */
+.footer-wave-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    opacity: 0.3; /* Design onujayi halka thakbe */
+    z-index: 1;
+    pointer-events: none; /* Wave er upore click jeno na pore */
+}
+
+.footer-content {
+    position: relative;
+    z-index: 3;
+}
+
+/* Platform Links Alignment */
+.platform-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+    flex-wrap: wrap; /* Mobile e jeno niche niche chole jay */
+}
+
+.platform-links a {
+    color: #b1b1b1;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.platform-links a:hover {
+    color: white;
+}
+
+.platform-links a img {
+    width: 18px; /* Platform icon size */
+    height: auto;
+}
+
+/* Copyright Style */
+.copyright {
+    color: #666;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Responsive View */
+@media (max-width: 600px) {
+    .platform-links {
+        gap: 15px;
+    }
+    .platform-links a {
+        font-size: 13px;
+    }
+}
