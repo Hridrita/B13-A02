@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +7,11 @@
 }
 
 body {
-    background-color: #1a0b3c; /* Dark background like design */
+    background-color: #1a0b3c; 
     color: white;
 }
 
-/* Navbar Styling */
+
 .navbar {
     
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -28,7 +28,7 @@ body {
     padding: 0 20px;
 }
 
-/* Logo Styling */
+
 .logo {
     color: #fff;
     font-size: 28px;
@@ -43,7 +43,7 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-/* Menu Items (Center) */
+
 .nav-menu {
     display: flex;
     list-style: none;
@@ -64,7 +64,7 @@ body {
     color: #fff;
 }
 
-/* Gradient Button (Right) */
+
 .subscribe-btn {
     background: linear-gradient(90deg, #fce043 0%, #fb7185 50%, #d946ef 100%);
     padding: 10px 25px;
@@ -82,7 +82,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Responsive (Mobile View) */
+
 #check {
     display: none;
 }
@@ -95,9 +95,9 @@ body {
 }
 
 .btn-img-icon {
-    width: 18px;       /* Design onujayi size */
+    width: 18px;       
     height: auto;
-    margin-right: 8px; /* Text theke gap */
+    margin-right: 8px; 
 }
 
 @media (max-width: 850px) {
